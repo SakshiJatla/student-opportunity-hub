@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 140" role="img" aria-labelledby="title desc">
+  <title id="title">OptiPath logo</title>
+  <desc id="desc">Blue and violet OptiPath pathway logo and wordmark.</desc>
+  <defs>
+    <linearGradient id="pathGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="124" height="124" rx="32" fill="url(#pathGradient)"/>
+  <path d="M42 92V48c0-9 7-16 16-16h22c15 0 26 10 26 24s-11 24-26 24H58" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M72 80l15 18 22-31" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="109" cy="67" r="5.5" fill="#fff"/>
+  <text x="158" y="92" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="-2.2" fill="#111827">Opti<tspan fill="#7C3AED">Path</tspan></text>
+</svg>

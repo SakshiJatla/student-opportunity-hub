@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OptiPath — AI-Powered Student Opportunity Platform</title>
+<link rel="stylesheet" href="/styles.css?v=20260917-home-v2">
+</head>
+<body>
+<header class="topbar home-topbar">
+  <a class="brand" href="#home" aria-label="OptiPath Home">
+    <img class="brandlogo" src="/logo.svg" alt="OptiPath logo">
+    <span><b>OptiPath</b><small>Shape Your Skills. Find Your Path.</small></span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a class="nav-active" href="#home">Home</a>
+    <a href="#explore">Explore</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <button class="btn ghost" onclick="openAuth()">Login</button>
+    <button class="btn" onclick="openAuth('register')">Create Account</button>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section id="home" class="real-hero">
+    <div class="home-container hero-layout">
+      <div class="hero-copy">
+        <div class="hero-kicker"><span>✦</span> AI-POWERED STUDENT OPPORTUNITY PLATFORM</div>
+        <h1>Build your future.<br><span>One opportunity at a time.</span></h1>
+        <p class="hero-lead">Discover internships, jobs, training, workshops and career opportunities. Build your profile, apply with confidence and keep your career journey organised in one place.</p>
+        <div class="hero-actions">
+          <a class="btn hero-main-btn" href="#explore">Explore Opportunities <span>→</span></a>
+          <button class="btn hero-outline-btn" onclick="openAuth('register')">Create Your Account</button>
+        </div>
+        <div class="hero-points" aria-label="Platform benefits">
+          <span>✓ Real opportunities</span>
+          <span>✓ AI career support</span>
+          <span>✓ Verified certificates</span>
+        </div>
+      </div>
+
+      <div class="hero-dashboard" aria-label="OptiPath platform preview">
+        <div class="dashboard-window">
+          <div class="window-bar"><span></span><span></span><span></span><b>OptiPath Workspace</b></div>
+          <div class="workspace-head">
+            <div><small>YOUR CAREER DASHBOARD</small><h3>Everything in one place.</h3></div>
+            <div class="workspace-badge">Student</div>
+          </div>
+          <div class="workspace-search"><span>⌕</span> Search internships, jobs and more <b>Search</b></div>
+          <div class="workspace-grid">
+            <article><div class="workspace-icon blue">↗</div><b>Opportunities</b><small>Discover roles that match your goals.</small><strong>Explore →</strong></article>
+            <article><div class="workspace-icon violet">✓</div><b>Applications</b><small>Keep your applications organised.</small><strong>Track →</strong></article>
+            <article><div class="workspace-icon blue">✦</div><b>Career Support</b><small>Improve skills and your resume with AI.</small><strong>Improve →</strong></article>
+            <article><div class="workspace-icon violet">▣</div><b>Certificates</b><small>View your verified achievements.</small><strong>View →</strong></article>
+          </div>
+          <div class="workspace-footer"><span><i></i> Career journey organised</span><span>Secure role-based access</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section id="explore" class="section explore-section real-section">
+    <div class="home-container">
+      <div class="section-intro-row">
+        <div>
+          <span class="eyebrow">Explore</span>
+          <h2>Opportunities worth exploring.</h2>
+          <p>Find internships, jobs, training, workshops and other career opportunities published on OptiPath.</p>
+        </div>
+        <div class="searchbox real-searchbox">
+          <input id="oppSearch" placeholder="Search opportunities..." aria-label="Search opportunities">
+          <select id="oppCategory" aria-label="Opportunity category">
+            <option value="">All categories</option><option>Internship</option><option>Job</option><option>Scholarship</option><option>Hackathon</option><option>Workshop</option><option>Competition</option><option>Fellowship</option><option>Training</option>
+          </select>
+          <button class="btn" onclick="loadOpportunities()">Search</button>
+        </div>
+      </div>
+      <div id="opportunities" class="grid opportunity-grid"></div>
+    </div>
+  </section>
+
+  <!-- WHY OPTIPATH -->
+  <section class="real-benefits">
+    <div class="home-container">
+      <div class="benefits-heading">
+        <span class="eyebrow">Why OptiPath</span>
+        <h2>Everything you need for a more organised career journey.</h2>
+      </div>
+      <div class="benefit-grid">
+        <article><span class="benefit-no">01</span><h3>Discover</h3><p>Find relevant internships, jobs, training programmes, workshops and events without searching across multiple places.</p></article>
+        <article><span class="benefit-no">02</span><h3>Apply & Track</h3><p>Apply through the platform and keep your application status and career activity organised.</p></article>
+        <article><span class="benefit-no">03</span><h3>Improve</h3><p>Use AI-powered career assistance, skill gap analysis, resume guidance and academic insights.</p></article>
+        <article><span class="benefit-no">04</span><h3>Achieve</h3><p>View certificates and build a clearer record of your learning, applications and achievements.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section real-about">
+    <div class="home-container">
+      <div class="about-lead">
+        <div>
+          <span class="eyebrow">About OptiPath</span>
+          <h2>One connected platform for students, colleges and administrators.</h2>
+        </div>
+        <p>OptiPath brings opportunity discovery, student management, academic workflows and career support together in a secure role-based platform.</p>
+      </div>
+      <div class="role-grid">
+        <article><span>01</span><h3>Students</h3><p>Create and update your profile, discover opportunities, apply, track applications, view attendance and certificates, and use career-support tools.</p></article>
+        <article><span>02</span><h3>Colleges</h3><p>Manage student access, update attendance records, review applications and support institution-level student workflows.</p></article>
+        <article><span>03</span><h3>Administrators</h3><p>Manage colleges, students, opportunities, certificates and platform activity from a central administrative portal.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="real-contact">
+    <div class="home-container contact-inner-real">
+      <div><span class="eyebrow">Contact</span><h2>Ready to find your next opportunity?</h2><p>Join OptiPath and keep your opportunities, applications and career progress in one place.</p></div>
+      <div class="contact-actions"><button class="btn contact-login" onclick="openAuth()">Login</button><button class="btn" onclick="openAuth('register')">Create Account</button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="real-footer">
+  <div class="home-container footer-inner"><div><b>OptiPath</b><span>AI-Powered Student Opportunity Platform</span></div><div>© 2026 OptiPath. All rights reserved.</div></div>
+</footer>
+
+<div id="modal" class="modal hidden"><div class="modalbox"><button class="x" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="/app.js?v=20260917-home-v2"></script>
+</body>
+</html>

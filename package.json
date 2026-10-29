@@ -1,0 +1,20 @@
+{
+  "name": "student-opportunity-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OptiPath - AI-Powered Student Opportunity Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "pdfkit": "^0.17.2",
+    "qrcode": "^1.5.4"
+  }
+}
